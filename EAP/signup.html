@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Document</title>
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+    <!---------------------------- Main Container ---------------------------------->
+
+
+    <!----------------- Header ----------------------->
+
+    <div class="header">
+        <!------------- Navbar--------------- -->
+
+        <nav class="navbar">
+            <!--------- Logo Container--------- -->
+
+            <div class="logocon">
+                <!-- logo -->
+
+                <div class="logo">
+                    <img src="./images/hlogo.png" alt="logo" />
+                </div>
+                <!-- logo text -->
+
+                <div class="logotext">
+                    <img src="./images/hlogotext.png" alt="text" />
+                    <img src="./images/hlogoline.png" alt="lineimg" />
+                </div>
+            </div>
+
+            <div class="links">
+                <!-- show hide class to toggle nav elements after login & active class to highlight current page  -->
+
+                <!--------- Before Login---------->
+                <div class="show">
+                    <li><a class="active" href="index.html">ACCUEIL</a></li>
+                    <li><a href="./signup.html">S’INSCRIRE</a></li>
+                    <li><a href="./login.html">SE CONNECTER</a></li>
+                </div>
+
+
+                <!------------ After Login ---------->
+
+                <div class="hide">
+                    <li><a href="./home1.html">ACCUEIL</a></li>
+                    <li><a href="./carte.html">CARTE</a></li>
+                    <li><a href="./reglages.html">RÉGLAGES</a></li>
+                    <li><a href="./invoices.html">FACTURES</a></li>
+                    <li><a href="#">DÉCONNEXION</a></li>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="cont">
+        <div class=" signup_con ">
+            <div class="signup">
+
+                <h1>S’INSCRIRE</h1>
+                <!-- part 1 -->
+                <div class="part1 ">
+                    <div class="title">
+                        <h3>ÉTAPE 1 SUR 4</h3>
+                    </div>
+                    <!------- form-------- -->
+                    <form>
+                        <div class="radiobtn">
+                            <p>CIVILITÉ</p>
+                            <input type="radio" id="Mr" name="Mr" value="Mr">
+                            <label for="Mr">Mr</label>
+                            <input type="radio" id="Mme" name="Mme" value="Mme">
+                            <label for="Mme">Mme</label>
+                            <input type="radio" id="Autre" name="Autre" value="Autre">
+                            <label for="Autre">Autre</label>
+                        </div>
+
+
+                        <label for="fname">NOM</label> <br>
+                        <input type="text" id="fname" name="fname" placeholder="Nom"> <br>
+
+                        <label for="lname">PRÉNOM</label> <br>
+                        <input type="text" id="lname" name="lname" placeholder="Nom"> <br>
+
+                        <label for="email">MAIL</label> <br>
+                        <input type="email" id="email" name="email" placeholder="Nom"> <br>
+
+                        <label for="cno">TÉLÉPHONE</label> <br>
+                        <input type="tel" id="cno" name="contact no" placeholder="Nom"> <br>
+
+                        <label for="pass">MOT DE PASSE</label> <br>
+                        <input type="password" id="pass" name="pass" placeholder="Nom"> <br>
+
+                        <label for="cpass">CONFIRMER LE MOT DE PASSE</label> <br>
+                        <input type="password" id="cpass" name="pass" placeholder="Nom"> <br>
+                    </form>
+
+                    <div class="btndiv">
+                        <button>PRÉCÉDENT</button>
+                        <button>SUIVANT</button>
+                    </div>
+                </div>
+
+                <!-- part 2 -->
+                <div class="part2 hide">
+                    <div class="title">
+                        <h3>ÉTAPE 2 SUR 4</h3>
+                    </div>
+                    <!------- form-------- -->
+
+                    <div class="pricingform">
+                        <div class="cardcon">
+                            <div class="card">
+                                <p>Price 1</p>
+                                <p>$ 20.99 </p>
+                                <p>10 users per month</p>
+                                <div class="features">
+                                    <p> <span>✓</span> Auto Update</p>
+                                    <p> <span>✓</span> Online Support 24/7</p>
+                                    <p> <span>✓</span> New Feature</p>
+                                    <p> <span>✓</span> Unique Emails</p>
+                                    <p> <span>✓</span> Pipeline Templates</p>
+                                </div>
+
+                            </div>
+                            <div class="card">
+                                <p>Price 2</p>
+                                <p>$ 20.99 </p>
+                                <p>10 users per month</p>
+                                <div class="features">
+                                    <p> <span>✓</span> Auto Update</p>
+                                    <p> <span>✓</span> Online Support 24/7</p>
+                                    <p> <span>✓</span> New Feature</p>
+                                    <p> <span>✓</span> Unique Emails</p>
+                                    <p> <span>✓</span> Pipeline Templates</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="btndiv">
+                        <button>PRÉCÉDENT</button>
+                        <button>SUIVANT</button>
+                    </div>
+                </div>
+
+                <!-- part 3 -->
+                <div class="part3 hide">
+                    <div class="title">
+                        <h3>ÉTAPE 3 SUR 4</h3>
+                    </div>
+                    <!------- form-------- -->
+                    <form>
+                        <label for="bname">NOM DU BAR</label> <br>
+                        <input type="text" id="bname" name="bname" placeholder="Nom"> <br>
+
+                        <label for="add">ADRESSE</label> <br>
+                        <input type="text" id="add" name="address" placeholder="Nom"> <br>
+
+                        <label for="code">CODE POSTAL</label> <br>
+                        <input type="number" id="code" name="postal code" placeholder="Nom"> <br>
+
+                        <label for="ville">VILLE</label> <br>
+                        <input type="text" id="ville" name="ville" placeholder="Nom"> <br>
+
+                        <label for="pay">PAYS</label> <br>
+                        <input type="text" id="pay" name="pay" placeholder="Nom"> <br>
+
+                        <label for="siret">SIRET</label> <br>
+                        <input type="text" id="siret" name="siret" placeholder="Nom"> <br>
+
+                        <label for="lic">LICENSE</label> <br>
+                        <input type="text" id="lic" name="licence" placeholder="Nom"> <br>
+
+                    </form>
+
+                    <div class="btndiv">
+                        <button>PRÉCÉDENT</button>
+                        <button>SUIVANT</button>
+                    </div>
+
+                    <div class="popup_small hide">
+                        <img src="./icons/exclamation.png" alt="">
+                        <p>En allant peut-être trop vite, vous avez oublié de remplir un champ ! Veuillez vérifiez à
+                            nouveau que tout est bien rempli correctement selon les normes :) !</p>
+                        <button>J’AI COMPRIS</button>
+                    </div>
+
+                </div>
+
+                <!-- part 4 -->
+                <div class="part4 hide">
+                    <div class="title">
+                        <h3>ÉTAPE 4 SUR 4</h3>
+                    </div>
+                    <!------- form-------- -->
+
+                    <form>
+
+                        <label for="iban">IBAN</label> <br>
+                        <input type="text" id="iban" name="iban" placeholder="Nom"> <br>
+
+                        <label for="niban">NOM IBAN</label> <br>
+                        <input type="text" id="niban" name="nom iban" placeholder="Nom"> <br>
+
+                        <label for="addf">ADRESSE FACTURATION</label> <br>
+                        <input type="text" id="addf" name="address facturation" placeholder="Nom"> <br>
+
+                        <label for="pcode">CODE POSTAL FACTURATION</label> <br>
+                        <input type="number" id="pcode" name="postal facturation" placeholder="Nom"> <br>
+
+                        <label for="villef">VILLE FACTURATION</label> <br>
+                        <input type="text" id="villef" name="ville facturation" placeholder="Nom"> <br>
+
+                        <label for="payf">PAYS FACTURATION</label> <br>
+                        <input type="text" id="payf" name="ville facturation" placeholder="Nom"> <br>
+
+
+                    </form>
+
+                    <div class="btndiv">
+                        <button>VALIDER</button>
+
+                    </div>
+
+                    <div class="popup_small hide">
+                        <img src="./icons/right.png" alt="">
+                        <p>Vous êtes bien inscrit ! <br> Vous pouvez vous connecter avec votre adresse mail. Vous recevrez un
+                            mail de confirmation</p>
+                        <button>RETOUR</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------------------- Footer ----------------------->
+    <div class="footer">
+
+        <div class="ftextcon">
+
+            <!-- texts  -->
+            <div class="fsocial">
+                <div class="title">
+                    <span></span>
+                    <p>NOUS RETROUVER</p>
+                </div>
+                <div class="icons">
+                    <a href="#"><img src="./icons/insta.png" alt="icon"></a>
+                    <a href="#"><img src="./icons/twitter.png" alt="icon"></a>
+                    <a href="#"><img src="./icons/fb.png" alt="icon"></a>
+                </div>
+
+            </div>
+
+            <div class="faddress">
+                <div class="title">
+                    <span></span>
+                    <p>NOTRE ADRESSE</p>
+                </div>
+                <div class="address">
+                    <p>11 rue Cambrai 75019 Paris <br> +33 184 606 767</p>
+                </div>
+            </div>
+
+            <div class="flinks">
+                <div class="title">
+                    <span></span>
+                    <p>AIDES</p>
+                </div>
+                <div class="link">
+                    <a href="./contact.html">• Nous contacter</a>
+                    <a href="./legal.html">• Mentions légales</a>
+                    <a href="#">• Service client</a>
+                    <a href="./faq.html">• FAQ</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-------------- logodiv ------------- -->
+
+        <div class="flogocon">
+            <div class="flogotext">
+                <img src="./images/flogotext.png" alt="flogotext">
+                <img src="./images/flogoline.png" alt="">
+            </div>
+            <div class="flogo">
+                <img src="./images/flogo.png" alt="flogo">
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
